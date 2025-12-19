@@ -9,12 +9,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="w-16 h-16 relative mb-4 overflow-hidden">
+            <div className="w-16 h-16 relative mb-4 overflow-hidden rounded-full bg-white ring-2 ring-lime/60">
               <Image
                 src="/smart-fix-logo.png"
                 alt="Smart Fix Logo - Premium Home Renovation Management"
                 fill
-                className="object-contain scale-125"
+                className="object-contain scale-[1.45]"
                 sizes="64px"
               />
             </div>

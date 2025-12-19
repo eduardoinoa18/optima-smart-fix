@@ -14,12 +14,12 @@ export default function Header() {
       <div className="container mx-auto px-4 max-w-7xl py-2 flex items-center justify-between">
         {/* Logo & Brand */}
         <div className="flex items-center gap-4">
-          <div className="w-16 h-16 relative flex-shrink-0 overflow-hidden">
+          <div className="w-16 h-16 relative flex-shrink-0 overflow-hidden rounded-full bg-white ring-2 ring-lime/60">
             <Image
               src="/smart-fix-logo.png"
               alt="Smart Fix Logo - Premium Home Renovation Management"
               fill
-              className="object-contain scale-125"
+              className="object-contain scale-[1.45]"
               priority
               sizes="64px"
             />

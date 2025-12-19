@@ -1,12 +1,13 @@
 'use client'
 
 export default function SEOHead() {
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://smartfix.optimaservicegroup.com'
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Optima Smart Fix',
-    url: 'https://smartfix.optimaservicegroup.com',
-    logo: 'https://smartfix.optimaservicegroup.com/smart-fix-logo.png',
+    url: base,
+    logo: `${base}/smart-fix-logo.png`,
     description:
       'Premium project management and branding for home renovations. Designer kitchens, luxury bathrooms, and flooring solutions.',
     sameAs: [

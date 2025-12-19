@@ -6,6 +6,7 @@ import BeforeAfter from '@/components/BeforeAfter'
 import Portfolio from '@/components/Portfolio'
 import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
+import WhatsAppButton from '@/components/WhatsAppButton'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <ContactForm />
       </section>
       <Footer />
+      <WhatsAppButton />
     </main>
   )
 }

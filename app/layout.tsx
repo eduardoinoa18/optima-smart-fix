@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import SEOHead from '@/components/SEOHead'
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://smartfix.optimaservicegroup.com'
+
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -31,16 +33,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://smartfix.optimaservicegroup.com',
+    url: SITE_URL,
     siteName: 'Optima Smart Fix',
     title: 'Optima Smart Fix | High-Impact Renovations. Managed Intelligence.',
     description: 'Premium project management for home renovations. Designer kitchens, luxury bathrooms, and more. Maximize your property value with Optima Smart Fix.',
     images: [
       {
-        url: 'https://smartfix.optimaservicegroup.com/smart-fix-logo.png',
+        url: `${SITE_URL}/opengraph-image.png`,
         width: 1200,
         height: 630,
-        alt: 'Smart Fix Logo',
+        alt: 'Optima Smart Fix — High-Impact Renovations. Managed Intelligence.',
         type: 'image/png',
       },
     ],
@@ -49,7 +51,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Optima Smart Fix | High-Impact Renovations. Managed Intelligence.',
     description: 'Premium project management for home renovations. Get a budget estimate today.',
-    images: ['https://smartfix.optimaservicegroup.com/smart-fix-logo.png'],
+    images: [`${SITE_URL}/twitter-image.png`],
     creator: '@OptimaSmartFix',
   },
   icons: {
@@ -75,8 +77,8 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Smart Fix" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/smart-fix-logo.png" />
-        <link rel="canonical" href="https://smartfix.optimaservicegroup.com" />
-        <link rel="alternate" hrefLang="en" href="https://smartfix.optimaservicegroup.com" />
+        <link rel="canonical" href={SITE_URL} />
+        <link rel="alternate" hrefLang="en" href={SITE_URL} />
         <SEOHead />
       </head>
       <body>{children}</body>
