@@ -5,24 +5,24 @@ import { motion } from 'framer-motion'
 const steps = [
   {
     number: '01',
-    title: 'Design',
-    description: 'We curate the aesthetic.',
-    detail: 'Our design team creates a customized plan that maximizes visual impact and property value.',
+    title: 'Smart Curation',
+    description: 'We define your aesthetic vision.',
+    detail: 'Our design team curates a customized aesthetic plan with a transparent budget range aligned to your investment goals.',
     icon: '🎨'
   },
   {
     number: '02',
-    title: 'Quote',
-    description: 'Fixed pricing. No hidden fees.',
-    detail: 'Transparent, all-inclusive pricing provided upfront. What you see is what you pay.',
-    icon: '💎'
+    title: 'Secured Execution',
+    description: 'Elite certified affiliates assigned.',
+    detail: 'We deploy our vetted network of insured, master-level construction affiliates to execute with precision and professionalism.',
+    icon: '⚙️'
   },
   {
     number: '03',
-    title: 'Build',
-    description: 'Fast execution by certified partners.',
-    detail: 'Professional installation with minimal disruption. Most projects completed in days, not weeks.',
-    icon: '⚡'
+    title: 'Managed Success',
+    description: 'Premium oversight end-to-end.',
+    detail: 'We oversee brand standards, timelines, and quality assurance to ensure a premium result from vision to completion.',
+    icon: '✅'
   }
 ]
 
@@ -38,10 +38,10 @@ export default function Process() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-            The Optima Process
+            How It Works
           </h2>
           <p className="text-xl text-navy/70 max-w-2xl mx-auto">
-            Simple, transparent, and designed for your peace of mind.
+            We manage the entire experience, from vision to premium execution.
           </p>
         </motion.div>
 
@@ -90,7 +90,7 @@ export default function Process() {
           ))}
         </div>
 
-        {/* Transparency Message */}
+        {/* Brand Authority Message */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -98,9 +98,11 @@ export default function Process() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-20 text-center max-w-3xl mx-auto bg-navy rounded-2xl p-10"
         >
-          <p className="text-xl text-white/90 leading-relaxed">
-            Powered by <span className="text-lime font-bold">Optima Service Group</span>, we bring 
-            corporate-level reliability to home renovations.
+          <p className="text-xl text-white/90 leading-relaxed mb-4">
+            <span className="text-lime font-bold">One point of contact.</span> You deal with us; we deal with the contractors.
+          </p>
+          <p className="text-white/70 text-sm">
+            Powered by <span className="text-lime font-bold">Optima Service Group</span>, we bring project management excellence and brand authority to home renovations.
           </p>
         </motion.div>
       </div>

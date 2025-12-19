@@ -17,10 +17,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Services</h4>
             <ul className="space-y-2 text-white/70">
-              <li>Kitchen Face-lift</li>
+              <li>Designer Kitchens</li>
               <li>Boutique Bathrooms</li>
-              <li>Luxury Flooring</li>
-              <li>Curb Appeal</li>
+              <li>Full-Home Flooring</li>
+              <li>Premium Finishes</li>
             </ul>
           </div>
 
@@ -42,8 +42,11 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-white/20 pt-8">
           <div className="text-center text-white/60 text-sm">
-            <p className="mb-2">
-              Optima Smart Fix is a specialized division of <span className="text-lime font-semibold">Optima Service Group</span>
+            <p className="mb-3">
+              <span className="text-lime font-semibold">Optima Smart Fix</span> is a specialized management division of <span className="text-lime font-semibold">Optima Service Group LLC</span>.
+            </p>
+            <p className="mb-2 text-xs">
+              Physical construction services are performed by independent certified affiliates. Optima Smart Fix acts as the project originator and brand manager.
             </p>
             <p>
               © {new Date().getFullYear()} Optima Smart Fix. All rights reserved.

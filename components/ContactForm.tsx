@@ -7,8 +7,8 @@ import { useState } from 'react'
 type FormData = {
   fullName: string
   phone: string
-  projectType: string
-  zipCode: string
+  primaryGoal: string
+  investmentRange: string
 }
 
 export default function ContactForm() {
@@ -34,10 +34,10 @@ export default function ContactForm() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-            Start Your Transformation
+            Budget Intake Form
           </h2>
           <p className="text-xl text-navy/70 max-w-2xl mx-auto">
-            Get a fixed-price estimate in 48 hours. No pressure, no hidden fees.
+            Tell us your goals and budget range. We'll create a customized Smart Fix plan.
           </p>
         </motion.div>
 
@@ -89,50 +89,51 @@ export default function ContactForm() {
               )}
             </div>
 
-            {/* Project Type */}
+            {/* Primary Goal */}
             <div>
-              <label htmlFor="projectType" className="block text-navy font-semibold mb-2">
-                Project Type *
+              <label htmlFor="primaryGoal" className="block text-navy font-semibold mb-2">
+                Primary Goal *
               </label>
               <select
-                {...register('projectType', { required: 'Please select a project type' })}
-                id="projectType"
+                {...register('primaryGoal', { required: 'Please select a goal' })}
+                id="primaryGoal"
                 className="w-full px-4 py-3 rounded-lg border-2 border-navy/20 focus:border-lime focus:outline-none transition-colors bg-white"
               >
-                <option value="">Select a service...</option>
-                <option value="kitchen">Kitchen Face-lift</option>
-                <option value="bathroom">Boutique Bathroom</option>
-                <option value="flooring">Luxury Flooring</option>
-                <option value="curb-appeal">Curb Appeal</option>
-                <option value="multiple">Multiple Services</option>
-                <option value="other">Other</option>
+                <option value="">Select your primary goal...</option>
+                <option value="resale">Increase Resale Value</option>
+                <option value="personal">Personal Modernization</option>
+                <option value="rental">Rental Upgrade</option>
               </select>
-              {errors.projectType && (
-                <p className="text-red-500 text-sm mt-1">{errors.projectType.message}</p>
+              {errors.primaryGoal && (
+                <p className="text-red-500 text-sm mt-1">{errors.primaryGoal.message}</p>
               )}
             </div>
 
-            {/* Zip Code */}
+            {/* Investment Range */}
             <div>
-              <label htmlFor="zipCode" className="block text-navy font-semibold mb-2">
-                Zip Code *
+              <label htmlFor="investmentRange" className="block text-navy font-semibold mb-2">
+                Estimated Investment Range *
               </label>
-              <input
-                {...register('zipCode', { 
-                  required: 'Zip code is required',
-                  pattern: {
-                    value: /^\d{5}(-\d{4})?$/,
-                    message: 'Please enter a valid zip code'
-                  }
-                })}
-                type="text"
-                id="zipCode"
-                className="w-full px-4 py-3 rounded-lg border-2 border-navy/20 focus:border-lime focus:outline-none transition-colors"
-                placeholder="12345"
-              />
-              {errors.zipCode && (
-                <p className="text-red-500 text-sm mt-1">{errors.zipCode.message}</p>
+              <select
+                {...register('investmentRange', { required: 'Please select a budget range' })}
+                id="investmentRange"
+                className="w-full px-4 py-3 rounded-lg border-2 border-navy/20 focus:border-lime focus:outline-none transition-colors bg-white"
+              >
+                <option value="">Select your budget range...</option>
+                <option value="10-20k">$10,000 - $20,000</option>
+                <option value="20-50k">$20,000 - $50,000</option>
+                <option value="50k+">$50,000+</option>
+              </select>
+              {errors.investmentRange && (
+                <p className="text-red-500 text-sm mt-1">{errors.investmentRange.message}</p>
               )}
+            </div>
+
+            {/* Disclaimer */}
+            <div className="bg-softGray border-2 border-navy/10 rounded-lg p-4">
+              <p className="text-sm text-navy/70 italic">
+                <span className="font-semibold">Note:</span> Optima Smart Fix works within your budget to maximize impact. All values are preliminary estimates for management and coordination purposes.
+              </p>
             </div>
 
             {/* Submit Button */}
@@ -140,7 +141,7 @@ export default function ContactForm() {
               type="submit"
               className="w-full bg-lime text-navy px-8 py-4 rounded-full text-lg font-bold hover:bg-gold hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              Start My Transformation
+              Get My Budget Estimate
             </button>
 
             {/* Success Message */}

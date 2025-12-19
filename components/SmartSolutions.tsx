@@ -4,26 +4,26 @@ import { motion } from 'framer-motion'
 
 const services = [
   {
-    title: 'Kitchen Face-lift',
-    description: 'Professional cabinet refinishing, luxury quartz countertops, and modern hardware.',
+    title: 'Designer Kitchens',
+    description: 'Curated surfaces and modern cabinetry finishes managed to perfection.',
     icon: '🏠',
     bgClass: 'service-bg-1'
   },
   {
     title: 'Boutique Bathrooms',
-    description: 'Spa-like upgrades, LED mirrors, and designer fixtures.',
+    description: 'Spa-inspired transformations that turn dated bathrooms into luxury retreats.',
     icon: '✨',
     bgClass: 'service-bg-2'
   },
   {
-    title: 'Luxury Flooring',
-    description: 'High-end LVP installation that is waterproof and scratch-resistant.',
+    title: 'Full-Home Flooring',
+    description: 'Seamless LVP and hardwood solutions to unify your home\'s aesthetic.',
     icon: '🎯',
     bgClass: 'service-bg-3'
   },
   {
-    title: 'Curb Appeal',
-    description: 'Exterior painting and architectural lighting to boost resale value.',
+    title: 'Premium Finishes',
+    description: 'Exterior details and architectural elements that maximize curb appeal and value.',
     icon: '🌟',
     bgClass: 'service-bg-4'
   }
@@ -41,10 +41,10 @@ export default function SmartSolutions() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-            Smart Solutions
+            Managed Solutions
           </h2>
           <p className="text-xl text-navy/70 max-w-2xl mx-auto">
-            Most contractors focus on construction. We focus on the <span className="text-gold font-semibold">Result</span>.
+            We focus on the <span className="text-gold font-semibold">premium result</span> — every detail managed to perfection.
           </p>
         </motion.div>
 
@@ -94,10 +94,20 @@ export default function SmartSolutions() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-20 text-center max-w-4xl mx-auto bg-softGray rounded-2xl p-10"
         >
-          <p className="text-xl text-navy/80 leading-relaxed italic">
-            "We combine design intelligence with professional execution to make your home look like a showroom 
-            <span className="text-gold font-semibold"> without the showroom price tag.</span>"
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <p className="text-lg text-navy font-bold mb-2">✓ Vetted Affiliates</p>
+              <p className="text-navy/70">Only certified, insured, and master-level builders.</p>
+            </div>
+            <div>
+              <p className="text-lg text-navy font-bold mb-2">✓ Value Focused</p>
+              <p className="text-navy/70">Every Smart Fix maximizes ROI on your investment.</p>
+            </div>
+            <div>
+              <p className="text-lg text-navy font-bold mb-2">✓ One Point of Contact</p>
+              <p className="text-navy/70">Deal with us. We manage the contractors.</p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
