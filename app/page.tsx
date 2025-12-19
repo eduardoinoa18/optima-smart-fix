@@ -1,9 +1,9 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import BeforeAfter from '@/components/BeforeAfter'
-import SmartSolutions from '@/components/SmartSolutions'
-import Portfolio from '@/components/Portfolio'
 import Process from '@/components/Process'
+import SmartSolutions from '@/components/SmartSolutions'
+import BeforeAfter from '@/components/BeforeAfter'
+import Portfolio from '@/components/Portfolio'
 import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
 
@@ -12,11 +12,19 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <section id="how-it-works">
+        <Process />
+      </section>
+      <section id="services">
+        <SmartSolutions />
+      </section>
       <BeforeAfter />
-      <SmartSolutions />
-      <Portfolio />
-      <Process />
-      <ContactForm />
+      <section id="gallery">
+        <Portfolio />
+      </section>
+      <section id="contact">
+        <ContactForm />
+      </section>
       <Footer />
     </main>
   )
