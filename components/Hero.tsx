@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 export default function Hero() {
@@ -16,6 +17,22 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+        {/* Logo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          className="w-28 h-28 mx-auto mb-8 relative overflow-hidden"
+        >
+          <Image
+            src="/smart-fix-logo.png"
+            alt="Smart Fix - Premium Home Renovation Management"
+            fill
+            className="object-contain scale-110"
+            sizes="112px"
+          />
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

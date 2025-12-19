@@ -1,0 +1,32 @@
+{
+  "name": "Optima Smart Fix - Premium Home Renovation Management",
+  "short_name": "Smart Fix",
+  "description": "Premium project management for home renovations. Designer kitchens, luxury bathrooms, and flooring solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A192F",
+  "theme_color": "#CCFF00",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/smart-fix-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/smart-fix-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["business", "lifestyle"],
+  "screenshots": [
+    {
+      "src": "/smart-fix-logo.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    }
+  ]
+}

@@ -41,10 +41,10 @@ export default function SmartSolutions() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-            Managed Solutions
+            Managed Solutions for Your Home
           </h2>
           <p className="text-xl text-navy/70 max-w-2xl mx-auto">
-            We focus on the <span className="text-gold font-semibold">premium result</span> — every detail managed to perfection.
+            Expert curation and professional execution—every detail managed to perfection.
           </p>
         </motion.div>
 

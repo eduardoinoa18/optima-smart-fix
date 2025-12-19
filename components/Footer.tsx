@@ -1,13 +1,24 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function Footer() {
   return (
     <footer className="bg-navy py-12">
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-lime mb-4">Optima Smart Fix</h3>
+            <div className="w-16 h-16 relative mb-4 overflow-hidden">
+              <Image
+                src="/smart-fix-logo.png"
+                alt="Smart Fix Logo - Premium Home Renovation Management"
+                fill
+                className="object-contain scale-125"
+                sizes="64px"
+              />
+            </div>
+            <h3 className="text-2xl font-bold text-lime mb-2">SMART FIX</h3>
             <p className="text-white/70 leading-relaxed">
               High-impact aesthetic renovations designed to maximize your property's value.
             </p>

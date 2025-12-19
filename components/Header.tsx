@@ -11,26 +11,27 @@ export default function Header() {
       transition={{ duration: 0.6 }}
       className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md border-b border-lime/20"
     >
-      <div className="container mx-auto px-4 max-w-7xl py-3 flex items-center justify-between">
+      <div className="container mx-auto px-4 max-w-7xl py-2 flex items-center justify-between">
         {/* Logo & Brand */}
-        <div className="flex items-center gap-3">
-          <div className="w-14 h-14 relative">
+        <div className="flex items-center gap-4">
+          <div className="w-16 h-16 relative flex-shrink-0 overflow-hidden">
             <Image
               src="/smart-fix-logo.png"
-              alt="Smart Fix Logo"
+              alt="Smart Fix Logo - Premium Home Renovation Management"
               fill
-              className="object-contain"
+              className="object-contain scale-125"
               priority
+              sizes="64px"
             />
           </div>
-          <div>
+          <div className="hidden sm:block">
             <div className="text-lime font-bold text-lg tracking-tight">SMART FIX</div>
             <div className="text-white/60 text-xs">Optima Service Group</div>
           </div>
         </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8" aria-label="Primary">
           <a href="#how-it-works" className="text-white/70 hover:text-lime transition-colors text-sm font-medium">How It Works</a>
           <a href="#services" className="text-white/70 hover:text-lime transition-colors text-sm font-medium">Services</a>
           <a href="#gallery" className="text-white/70 hover:text-lime transition-colors text-sm font-medium">Gallery</a>
