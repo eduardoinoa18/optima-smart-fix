@@ -11,38 +11,38 @@ export default function Header() {
       transition={{ duration: 0.6 }}
       className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md border-b border-lime/20"
     >
-      <div className="container mx-auto px-4 max-w-7xl py-2 flex items-center justify-between">
+      <div className="container mx-auto px-3 md:px-4 max-w-7xl py-1.5 md:py-2 flex items-center justify-between">
         {/* Logo & Brand */}
-        <div className="flex items-center gap-4">
-          <div className="w-16 h-16 relative flex-shrink-0 overflow-hidden rounded-full bg-white ring-2 ring-lime/60">
+        <div className="flex items-center gap-2 md:gap-3 min-w-0">
+          <div className="w-12 h-12 md:w-14 md:h-14 relative flex-shrink-0 overflow-hidden rounded-full bg-white ring-2 ring-lime/60">
             <Image
               src="/smart-fix-logo.png"
-              alt="Smart Fix Logo - Premium Home Renovation Management"
+              alt="Smart Fix Logo"
               fill
-              className="object-contain scale-[1.45]"
+              className="object-contain scale-[1.4]"
               priority
-              sizes="64px"
+              sizes="56px"
             />
           </div>
-          <div className="hidden sm:block">
-            <div className="text-lime font-bold text-lg tracking-tight">SMART FIX</div>
-            <div className="text-white/60 text-xs">Optima Service Group</div>
+          <div className="hidden sm:block min-w-0">
+            <div className="text-lime font-bold text-sm md:text-base tracking-tight truncate">SMART FIX</div>
+            <div className="text-white/60 text-xs truncate">Optima Service Group</div>
           </div>
         </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-8" aria-label="Primary">
-          <a href="#how-it-works" className="text-white/70 hover:text-lime transition-colors text-sm font-medium">How It Works</a>
-          <a href="#services" className="text-white/70 hover:text-lime transition-colors text-sm font-medium">Services</a>
-          <a href="#gallery" className="text-white/70 hover:text-lime transition-colors text-sm font-medium">Gallery</a>
-          <a href="#contact" className="text-white/70 hover:text-lime transition-colors text-sm font-medium">Get Estimate</a>
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-6" aria-label="Primary">
+          <a href="#how-it-works" className="text-white/70 hover:text-lime transition-colors text-xs xl:text-sm font-medium whitespace-nowrap">How It Works</a>
+          <a href="#services" className="text-white/70 hover:text-lime transition-colors text-xs xl:text-sm font-medium whitespace-nowrap">Services</a>
+          <a href="#gallery" className="text-white/70 hover:text-lime transition-colors text-xs xl:text-sm font-medium whitespace-nowrap">Gallery</a>
+          <a href="#contact" className="text-white/70 hover:text-lime transition-colors text-xs xl:text-sm font-medium whitespace-nowrap">Estimate</a>
         </nav>
 
-        {/* CTA + WhatsApp */}
-        <div className="flex items-center gap-3">
+        {/* CTA + WhatsApp - Mobile Optimized */}
+        <div className="flex items-center gap-1.5 md:gap-2 flex-shrink-0">
           <button
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-lime text-navy px-6 py-2 rounded-full text-sm font-bold hover:bg-gold transition-all duration-300"
+            className="bg-lime text-navy px-3 md:px-5 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-bold hover:bg-gold transition-all duration-300 whitespace-nowrap"
           >
             Get Started
           </button>
@@ -55,7 +55,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat on WhatsApp"
-            className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 border border-white/15 ${
+            className={`w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-200 border border-white/15 flex-shrink-0 ${
               process.env.NEXT_PUBLIC_WHATSAPP_PHONE ? 'bg-[#25D366] hover:brightness-110' : 'bg-white/10 text-white/60 cursor-not-allowed'
             }`}
             onClick={(e) => {
@@ -64,12 +64,12 @@ export default function Header() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
+              width="16"
+              height="16"
               viewBox="0 0 24 24"
               fill="none"
               stroke="white"
-              strokeWidth="2"
+              strokeWidth="2.5"
               strokeLinecap="round"
               strokeLinejoin="round"
               aria-hidden="true"

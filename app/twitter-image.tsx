@@ -1,4 +1,5 @@
 /* eslint-disable */
+/* Satori requires inline styles for image generation */
 import { ImageResponse } from 'next/og'
 import { readFileSync } from 'fs'
 import path from 'path'
