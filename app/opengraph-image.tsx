@@ -1,4 +1,8 @@
-import { ImageResponse } from 'next/server'
+import { ImageResponse } from 'next/og'
+import { readFileSync } from 'fs'
+import path from 'path'
+
+export const runtime = 'nodejs'
 
 export const size = {
   width: 1200,
@@ -6,10 +10,12 @@ export const size = {
 }
 
 export const contentType = 'image/png'
+export const dynamic = 'force-dynamic'
 
 export default async function OGImage() {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
-  const logoSrc = `${base}/smart-fix-logo.png`
+  const logoPath = path.join(process.cwd(), 'public', 'smart-fix-logo.png')
+  const logoBase64 = readFileSync(logoPath).toString('base64')
+  const logoSrc = `data:image/png;base64,${logoBase64}`
 
   return new ImageResponse(
     (

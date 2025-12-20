@@ -2,7 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import SEOHead from '@/components/SEOHead'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://smartfix.optimaservicegroup.com'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://smartfix.optimaservicegroup.com'
+
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -13,6 +14,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: 'Optima Smart Fix | Premium Home Renovation Management | High-Impact Renovations',
   description: 'Premium project management and branding for home renovations. Designer kitchens, luxury bathrooms, and flooring. Managed by certified affiliates. Get a budget estimate today.',
   keywords: 'home renovation, kitchen remodeling, bathroom renovation, luxury flooring, property value increase, home improvement',
