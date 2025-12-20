@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { ImageResponse } from 'next/og'
 import { readFileSync } from 'fs'
 import path from 'path'

@@ -1,0 +1,19 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@next/next/no-css-tags": "off",
+    "@next/next/no-head-element": "off",
+    "@next/next/no-img-element": "warn",
+    "react/no-unescaped-entities": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/opengraph-image.tsx", "**/twitter-image.tsx"],
+      "rules": {
+        "react/no-unknown-property": "off",
+        "@next/next/no-img-element": "off",
+        "@typescript-eslint/ban-ts-comment": "off"
+      }
+    }
+  ]
+}

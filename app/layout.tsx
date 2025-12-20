@@ -73,12 +73,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
-        <meta name="theme-color" content="#0A192F" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Smart Fix" />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/smart-fix-logo.png" />
         <link rel="canonical" href={SITE_URL} />
         <link rel="alternate" hrefLang="en" href={SITE_URL} />
         <SEOHead />
