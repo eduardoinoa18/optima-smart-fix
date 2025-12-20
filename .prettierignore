@@ -1,0 +1,4 @@
+app/opengraph-image.tsx
+app/twitter-image.tsx
+.next/
+node_modules/

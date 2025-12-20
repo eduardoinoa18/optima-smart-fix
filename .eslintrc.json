@@ -4,7 +4,8 @@
     "@next/next/no-css-tags": "off",
     "@next/next/no-head-element": "off",
     "@next/next/no-img-element": "warn",
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "@stylistic/no-unused-vars": "off"
   },
   "overrides": [
     {
@@ -12,7 +13,8 @@
       "rules": {
         "react/no-unknown-property": "off",
         "@next/next/no-img-element": "off",
-        "@typescript-eslint/ban-ts-comment": "off"
+        "@typescript-eslint/ban-ts-comment": "off",
+        "no-inline-styles": "off"
       }
     }
   ]

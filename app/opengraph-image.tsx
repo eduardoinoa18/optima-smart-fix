@@ -21,6 +21,7 @@ export default async function OGImage() {
 
   return new ImageResponse(
     (
+      // eslint-disable-next-line react/no-unknown-property
       <div
         style={{
           width: '100%',
